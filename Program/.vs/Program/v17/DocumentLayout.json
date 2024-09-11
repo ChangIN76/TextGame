@@ -1,9 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Program\\",
+  "WorkspaceRootPath": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\TextGame\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20DC550C-9144-458E-A3F9-612E8024C373}|Program.vcxproj|C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{426DEE9E-BF7A-4D34-93A8-1DEC62989EE0}|..\\Class1th (GetAsyncKeystate)\\Class1th (GetAsyncKeystate).vcxproj|C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\TextGame\\Class1th (GetAsyncKeystate)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DC550C-9144-458E-A3F9-612E8024C373}|Program.vcxproj|C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\TextGame\\Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{20DC550C-9144-458E-A3F9-612E8024C373}|Program.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -24,11 +27,24 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Program\\Source.c",
+              "DocumentMoniker": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\TextGame\\Class1th (GetAsyncKeystate)\\Source.c",
+              "RelativeDocumentMoniker": "..\\Class1th (GetAsyncKeystate)\\Source.c",
+              "ToolTip": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\TextGame\\Class1th (GetAsyncKeystate)\\Source.c",
+              "RelativeToolTip": "..\\Class1th (GetAsyncKeystate)\\Source.c",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-09-11T12:14:43.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.c",
+              "DocumentMoniker": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\TextGame\\Program\\Source.c",
               "RelativeDocumentMoniker": "Source.c",
-              "ToolTip": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Program\\Source.c",
+              "ToolTip": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\TextGame\\Program\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAADUAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-09-10T11:06:26.625Z",
               "EditorCaption": ""

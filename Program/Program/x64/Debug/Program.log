@@ -1,2 +1,4 @@
 ﻿  Source.c
-  Program.vcxproj -> C:\Users\vel55\OneDrive\바탕 화면\Program\x64\Debug\Program.exe
+C:\Users\vel55\OneDrive\바탕 화면\TextGame\Program\Source.c(88,2): warning C4013: 'sleep'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+Source.obj : error LNK2019: sleepmain 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\Users\vel55\OneDrive\바탕 화면\TextGame\Program\x64\Debug\Program.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
