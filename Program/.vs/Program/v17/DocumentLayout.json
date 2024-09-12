@@ -17,12 +17,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -31,10 +27,15 @@
               "RelativeDocumentMoniker": "..\\Class1th (GetAsyncKeystate)\\Source.c",
               "ToolTip": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\TextGame\\Class1th (GetAsyncKeystate)\\Source.c",
               "RelativeToolTip": "..\\Class1th (GetAsyncKeystate)\\Source.c",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAABYAAAAQAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAswGUAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-09-11T12:14:43.112Z",
+              "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
@@ -44,10 +45,9 @@
               "RelativeDocumentMoniker": "Source.c",
               "ToolTip": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\TextGame\\Program\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGMAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAGMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-09-10T11:06:26.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-10T11:06:26.625Z"
             }
           ]
         }
