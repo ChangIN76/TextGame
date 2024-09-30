@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\TextGame\\Program\\",
+  "WorkspaceRootPath": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\SBS\uC544\uCE74\uB370\uBBF8\uAC8C\uC784\uD559\uC6D0\\TextGame\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{878AA94E-5531-4A4A-9940-B109AACBF906}|..\\Class4th (File Input and Output)\\Class4th (File Input and Output).vcxproj|C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\TextGame\\Class4th (File Input and Output)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{342953C9-90B0-40AC-8D8A-E6D795E65B0E}|..\\Rhytme Game\\Rhytme Game.vcxproj|C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\SBS\uC544\uCE74\uB370\uBBF8\uAC8C\uC784\uD559\uC6D0\\TextGame\\Rhytme Game\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,23 +13,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\TextGame\\Class4th (File Input and Output)\\Source.c",
-              "RelativeDocumentMoniker": "..\\Class4th (File Input and Output)\\Source.c",
-              "ToolTip": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\TextGame\\Class4th (File Input and Output)\\Source.c",
-              "RelativeToolTip": "..\\Class4th (File Input and Output)\\Source.c",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAhwDcAAAARAAAA",
+              "DocumentMoniker": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\SBS\uC544\uCE74\uB370\uBBF8\uAC8C\uC784\uD559\uC6D0\\TextGame\\Rhytme Game\\Source.c",
+              "RelativeDocumentMoniker": "..\\Rhytme Game\\Source.c",
+              "ToolTip": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\SBS\uC544\uCE74\uB370\uBBF8\uAC8C\uC784\uD559\uC6D0\\TextGame\\Rhytme Game\\Source.c",
+              "RelativeToolTip": "..\\Rhytme Game\\Source.c",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAiwNsAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-09-20T12:41:06.428Z",
+              "WhenOpened": "2024-09-30T11:25:54.979Z",
               "EditorCaption": ""
             }
           ]

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <conio.h> // 키 입력을 위해 필요
+#include <conio.h> 
 #include <windows.h>
 
 #define MAX_ARROWS 5
@@ -94,4 +94,6 @@ int main() {
 
     printf("Game Over! Final Score: %d\n", score);
     return 0;
+
+
 }
