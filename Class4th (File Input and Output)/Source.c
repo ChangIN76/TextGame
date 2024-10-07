@@ -1,99 +1,222 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include <conio.h> 
-#include <windows.h>
+#include <iostream>
+#include <cstdlib>
+#include <vector>
+#include <string>
+#include <ctime>
+#include <conio.h>
+#include <WinUser.h>
 
-#define MAX_ARROWS 5
-#define SCREEN_HEIGHT 20
+#define MAGIC_KEY 224   // 상하좌우 키
+#define SPACE 32        // 스페이스 키
+#define LIFE 3          // 남은 횟수
+#define KEY_NUM 4       // 입력할 수 있는 키의 개수
+#define MAX_LEVEL 11    // 최고 레벨
 
-typedef struct {
+// const int UP = 72;
+// const int RIGHT = 77;
+// const int LEFT = 75;
+// const int DOWN = 80;
+// const int KEY_NUM = 4;
+// const int MAX_LEVEL = 11;
+
+enum MENU
+{
+    GAMESTART = 0,
+    INFO,
+    QUIT
+};
+
+enum KEYBOARD
+{
+    UP = 72,    // ↑
+    LEFT = 75,  // ←
+    RIGHT = 77, // →
+    DOWN = 80   // ↓
+};
+
+typedef struct
+{
     int x;
-    int active;
+    int y;
+    int MENU;
 } Arrow;
 
-Arrow arrows[MAX_ARROWS];
-int score = 0;
-
-void initArrows() {
-    for (int i = 0; i < MAX_ARROWS; i++) {
-        arrows[i].x = -1; // 비활성화 상태에서의 위치
-        arrows[i].active = 0; // 비활성화 상태
+void DrawUserCursor(int y) // 커서 움직이는 것 출력 대신 선택 숫자를 출력
+{
+    if (y <= 0)
+    {
+        y = 0;
+    }
+    else if (y >= 2)
+    {
+        y = 2;
     }
 }
 
-void generateArrow() {
-    for (int i = 0; i < MAX_ARROWS; i++) {
-        if (!arrows[i].active) {
-            arrows[i].x = rand() % 80; // 새로운 랜덤 위치 설정
-            arrows[i].active = 1; // 활성화
-            break; // 하나만 생성
-        }
-    }
-}
+void ReadyGame()
+{
+    int y = 0;
+    int input = 0;
+    while (1)
+    {
+        DrawUserCursor(y);
+        input = _getch(); 
 
-void render() {
-    system("cls"); // 콘솔 화면 지우기
-    for (int i = 0; i < MAX_ARROWS; i++) {
-        if (arrows[i].active) {
-            for (int j = 0; j < SCREEN_HEIGHT; j++) printf("\n");
-            for (int j = 0; j < arrows[i].x; j++) printf(" ");
-            printf("↑\n"); // 화살표 표시
-        }
-    }
-    printf("Score: %d\n", score);
-}
-
-void checkInput() {
-    if (_kbhit()) { // 키가 눌렸는지 체크
-        char ch = _getch(); // 누른 키 가져오기
-        for (int i = 0; i < MAX_ARROWS; i++) {
-            if (arrows[i].active) {
-                // 정확한 입력일 경우
-                if (ch == 'a' && arrows[i].x < 40) { // 왼쪽 화살표
-                    score++;
-                    arrows[i].active = 0; // 비활성화
-                }
-                else if (ch == 'd' && arrows[i].x >= 40) { // 오른쪽 화살표
-                    score++;
-                    arrows[i].active = 0; // 비활성화
-                }
-            }
-        }
-    }
-}
-
-int main() {
-    srand(time(NULL)); // 랜덤 시드 설정
-    initArrows(); // 화살표 초기화
-
-    while (1) {
-        generateArrow(); // 새 화살표 생성
-        render(); // 화면 출력
-        checkInput(); // 키 입력 처리
-
-        Sleep(1000); // 1초 대기
-
-        // 종료 조건: 모든 화살표가 비활성화 상태가 되면 종료
-        int allInactive = 1;
-        for (int i = 0; i < MAX_ARROWS; i++) {
-            if (arrows[i].active) {
-                allInactive = 0; // 하나라도 활성화된 화살표가 있으면 비활성화 아님
+        if (input == MAGIC_KEY)
+        {
+            switch (_getch())
+            {
+            case UP:
+                if (y > 0) --y;
+                break;
+            case DOWN:
+                if (y < 2) ++y;
                 break;
             }
         }
-        if (allInactive) {
-            break;
+        else if (input == SPACE)
+        {
+            switch (y)
+            {
+            case 0:
+                return GAMESTART;
+            case 1:
+                return INFO;
+            case 2:
+                return QUIT;
+            }
         }
+    }
+}
 
-        // 종료 조건: Esc 키 누르면 종료
-        if (_kbhit() && _getch() == 27) { // 27은 Esc 키
+int main()
+{
+    srand(static_cast<unsigned int>(time(nullptr)));
+
+    std::vector<int> questionVec;
+    int level = 5;
+}
+
+void SetQuestion(std::vector<int>& questionVec, int level)
+{
+    if (level > MAX_LEVEL)
+    {
+        level = MAX_LEVEL;
+    }
+    
+    questionVec.clear();
+
+      for (int i = 0; i < level; ++i) 
+      {
+           int num = rand() % KEY_NUM; 
+           questionVec.push_back(num + 72); 
+           switch (num)
+           {
+               case 0:
+                    questionVec.push_back(UP);
+                    break;
+               case 1:
+                    questionVec.push_back(RIGHT);
+                    break;
+               case 2:
+                    questionVec.push_back(LEFT);
+                    break;
+               case 3:
+                    questionVec.push_back(DOWN);
+                    break;
+           }
+      }
+}
+
+
+
+void VectorToString(const std::vector<int>& v, std::string& str)
+{
+    for (const int& direction : v)
+    {
+        switch (direction)
+        {
+        case UP:
+            str += "↑ ";
+            break;
+        case DOWN:
+            str += "↓ ";
+            break;
+        case LEFT:
+            str += "← ";
+            break;
+        case RIGHT:
+            str += "→ ";
             break;
         }
     }
-
-    printf("Game Over! Final Score: %d\n", score);
-    return 0;
-
-
 }
+
+bool CheckAnswer(const std::vector<int>& questionVec, const std::vector<int>& answerVec)
+{
+    /
+    return questionVec == answerVec; 
+}
+
+void StartGame()
+{
+    std::vector<int> questionVec;
+    std::string questionStr = "";
+    std::vector<int> answerVec;
+    std::string answerStr = "";
+
+    while (1)
+    {
+        int level = 1;
+
+        SetQuestion(questionVec, level);  
+        VectorToString(questionVec, questionStr);  
+
+        
+        while (1)
+        {
+            
+            DrawStartGame(3, 0, questionStr, answerStr);
+
+            int firstInput = _getch(); 
+            if (firstInput == MAGIC_KEY)
+            {
+                int secondInput = _getch();
+                answerVec.push_back(secondInput);
+                switch (secondInput)
+                {
+                case UP:
+                    answerStr += "↑ ";
+                    break;
+                case DOWN:
+                    answerStr += "↓ ";
+                    break;
+                case LEFT:
+                    answerStr += "← ";
+                    break;
+                case RIGHT:
+                    answerStr += "→ ";
+                    break;
+                }
+            }
+            else if (firstInput == SPACE)
+            {
+                if (CheckAnswer(questionVec, answerVec)) 
+                    std::cout << "정답입니다!" << std::endl;
+                else
+                    std::cout << "틀렸습니다." << std::endl;
+
+                break; 
+            }
+            
+            questionVec.clear();
+            questionStr = "";
+            answerVec.clear();
+            answerStr = "";
+        }
+    }
+}
+
+int main(void)
+{
+    srand((unsigned int)time(NULL));

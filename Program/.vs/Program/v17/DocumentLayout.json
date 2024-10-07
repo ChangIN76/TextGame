@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\SBS\uC544\uCE74\uB370\uBBF8\uAC8C\uC784\uD559\uC6D0\\TextGame\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{342953C9-90B0-40AC-8D8A-E6D795E65B0E}|..\\Rhytme Game\\Rhytme Game.vcxproj|C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\SBS\uC544\uCE74\uB370\uBBF8\uAC8C\uC784\uD559\uC6D0\\TextGame\\Rhytme Game\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A5805EB0-82EF-4061-8997-C0C10D29629A}|..\\Remake\\Remake.vcxproj|C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\SBS\uC544\uCE74\uB370\uBBF8\uAC8C\uC784\uD559\uC6D0\\TextGame\\Remake\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,19 +13,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\SBS\uC544\uCE74\uB370\uBBF8\uAC8C\uC784\uD559\uC6D0\\TextGame\\Rhytme Game\\Source.c",
-              "RelativeDocumentMoniker": "..\\Rhytme Game\\Source.c",
-              "ToolTip": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\SBS\uC544\uCE74\uB370\uBBF8\uAC8C\uC784\uD559\uC6D0\\TextGame\\Rhytme Game\\Source.c",
-              "RelativeToolTip": "..\\Rhytme Game\\Source.c",
-              "ViewState": "AQIAAMAAAAAAAAAAAAAiwNsAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-09-30T11:25:54.979Z",
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\SBS\uC544\uCE74\uB370\uBBF8\uAC8C\uC784\uD559\uC6D0\\TextGame\\Remake\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Remake\\Source.cpp",
+              "ToolTip": "C:\\Users\\vel55\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\SBS\uC544\uCE74\uB370\uBBF8\uAC8C\uC784\uD559\uC6D0\\TextGame\\Remake\\Source.cpp",
+              "RelativeToolTip": "..\\Remake\\Source.cpp",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAmwLQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-02T11:27:50.517Z",
               "EditorCaption": ""
             }
           ]

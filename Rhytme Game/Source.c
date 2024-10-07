@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include <cstdlib>
 #include <iostream>
 #include <sstream>
 #include <vector>
 #include <string>
 #include <ctime>
+#include <WinUser.h>
 
 #define MAGIC_KEY 224   // 상하좌우 키
 #define SPACE 32        // 스페이스 키
@@ -45,7 +47,7 @@ void DrawUserCursor(int y) // 커서 움직이는 것 출력 대신 선택 숫자를 출력
     }
 }
 
-MENU ReadyGame()
+void ReadyGame()
 {
     int y = 0;
     int input = 0;
@@ -53,7 +55,7 @@ MENU ReadyGame()
     {
         DrawReadyGame();
         DrawUserCursor(y);
-        input = std::cin.get();
+        input = std::cin.get()
 
         if (input == MAGIC_KEY)
         {
@@ -82,10 +84,6 @@ MENU ReadyGame()
     }
 }
 
-void InfoGame()
-{
-    DrawInfoGame();
-}
 
 void SetQuestion(std::vector<int>& questionVec, int level)
 {
@@ -95,7 +93,10 @@ void SetQuestion(std::vector<int>& questionVec, int level)
     }
 
     int num = 0;
+
+
     srand((unsigned int)time(NULL));
+
     for (int i = 0; i < level; ++i) //화살표의 개수 (문제 난이도)
     {
         num = rand() % KEY_NUM; //화살표 종류.

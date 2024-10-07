@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class4th (File Input and Ou
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rhytme Game", "..\Rhytme Game\Rhytme Game.vcxproj", "{342953C9-90B0-40AC-8D8A-E6D795E65B0E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Remake", "..\Remake\Remake.vcxproj", "{A5805EB0-82EF-4061-8997-C0C10D29629A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{342953C9-90B0-40AC-8D8A-E6D795E65B0E}.Release|x64.Build.0 = Release|x64
 		{342953C9-90B0-40AC-8D8A-E6D795E65B0E}.Release|x86.ActiveCfg = Release|Win32
 		{342953C9-90B0-40AC-8D8A-E6D795E65B0E}.Release|x86.Build.0 = Release|Win32
+		{A5805EB0-82EF-4061-8997-C0C10D29629A}.Debug|x64.ActiveCfg = Debug|x64
+		{A5805EB0-82EF-4061-8997-C0C10D29629A}.Debug|x64.Build.0 = Debug|x64
+		{A5805EB0-82EF-4061-8997-C0C10D29629A}.Debug|x86.ActiveCfg = Debug|Win32
+		{A5805EB0-82EF-4061-8997-C0C10D29629A}.Debug|x86.Build.0 = Debug|Win32
+		{A5805EB0-82EF-4061-8997-C0C10D29629A}.Release|x64.ActiveCfg = Release|x64
+		{A5805EB0-82EF-4061-8997-C0C10D29629A}.Release|x64.Build.0 = Release|x64
+		{A5805EB0-82EF-4061-8997-C0C10D29629A}.Release|x86.ActiveCfg = Release|Win32
+		{A5805EB0-82EF-4061-8997-C0C10D29629A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
